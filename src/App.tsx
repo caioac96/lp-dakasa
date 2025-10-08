@@ -1,10 +1,21 @@
-function App() {
+import { Layout } from "antd";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import InstagramCarousel from "./components/InstagramCarousel";
+
+const { Content } = Layout;
+
+export default function App() {
   return (
-    <div style={{ textAlign: "center", padding: "40px" }}>
-      <h1>Bem-vindo à minha landing page!</h1>
-      <p>Em breve mais conteúdo aqui 🚀</p>
-    </div>
+    <Layout className="content">
+      <Content>
+        {/* <Card> */}
+          <Router>
+            <Routes>
+              <Route path="/" element={<InstagramCarousel />} />
+            </Routes>
+          </Router>
+        {/* </Card> */}
+      </Content>
+    </Layout>
   );
 }
-
-export default App;
