@@ -9,7 +9,6 @@ export const MenuContainer = styled.div`
     gap: 55px;
     align-items: center;
     text-align: center;
-    min-width: 598px;
     background-color: #ffffff;
 
     * {
@@ -17,9 +16,25 @@ export const MenuContainer = styled.div`
     }
 `;
 
+export const MenuFooterContainer = styled.div`
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    
+    * {
+        font-size: 16px;
+        text-decoration: underline !important;
+    }
+`;
+
 export const Body = styled.main`
     width: 100%;
-    min-height: 200vh;
+    min-height: 170vh;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -28,8 +43,8 @@ export const Body = styled.main`
 `;
 
 export const ContainerImageVitrine = styled.div`
-    min-height: 20vh;
-    height: 20vh;
+    min-height: 21vh;
+    height: 22vh;
     width: 100%;
     display: flex;
     gap: 10px;
@@ -61,7 +76,7 @@ export const ContainerImageVitrine = styled.div`
     .img-div3 {
         width: 100%;
         /* filter: blur(1px); */
-        margin-top: -240px;
+        margin-top: -110px;
     }
 `;
 
@@ -80,7 +95,7 @@ export const TextAbout = styled.div`
 export const Faixa1 = styled.div`
     height: 1px;
     width: 100%;
-    background-color: #42634755;
+    background-color: #42636955;
     margin-bottom: 10px;
     margin-top: 20px;
     filter: blur(3px);
@@ -124,18 +139,11 @@ export const ButtonDivLeft = styled.div`
     align-items: center;
     align-content: center;
     z-index: 1;
-    left: 1%;
+    left: 5px;
     box-shadow: 6px 12px 111px #111111;
     background-color: #ffffff88;
     border-radius: 80px;
     top: 200px;
-`;
-
-export const ContainerNews = styled.div`
-    width: 100%;
-    height: 200px;
-    background-color: #426347;
-    margin-top: 30px;
 `;
 
 export const ButtonDivRight = styled.div`
@@ -146,7 +154,7 @@ export const ButtonDivRight = styled.div`
     align-items: center;
     align-content: center;
     z-index: 1;
-    right: 1%;
+    right: 5px;
     box-shadow: 6px 12px 111px #111111;
     border-radius: 80px;
     background-color: #ffffff88;

@@ -8,9 +8,9 @@ export default function InstagramCarousel() {
   const [width, setWidth] = useState(window.innerWidth);
 
   const posts = [
+    "DOdp1RgDR1c",
     "DPRvROtEVqh",
     "CmpNsxduklJ",
-    "DOdp1RgDR1c",
     "ClWps-0OT78",
     "CmhQH7rObRd",
     "ClMenzuuxsQ"
@@ -25,7 +25,6 @@ export default function InstagramCarousel() {
   };
 
   useEffect(() => {
-    console.log(width);
     setWidth(window.innerWidth);
   }, [window.innerWidth])
 
@@ -58,7 +57,6 @@ export default function InstagramCarousel() {
             >
               <iframe
                 src={`https://www.instagram.com/p/${src}/embed/`}
-                allowTransparency
                 allowFullScreen
                 frameBorder="0"
                 scrolling="no"

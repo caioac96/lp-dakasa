@@ -9,24 +9,24 @@ createRoot(document.getElementById('root')!).render(
     <ConfigProvider
       theme={{
         token: {
-          colorPrimary: "#426347",
-          colorPrimaryHover: "#42634755", // hover
-          colorPrimaryActive: "#42634755",
-          colorLink: "#426347",
-          colorLinkHover: "#42634755",
+          colorPrimary: "#426369",
+          colorPrimaryHover: "#42636955", // hover
+          colorPrimaryActive: "#42636955",
+          colorLink: "#426369",
+          colorLinkHover: "#42636955",
           colorLinkActive: "#ffffff99",
-          colorText: "#426347",
+          colorText: "#426369",
           colorBgContainer: "#111111",
           fontFamily: "'Poppins', sans-serif",
           borderRadius: 8,
         },
         components: {
           Button: {
-            colorPrimary: "#426347",
-            colorBorder: "#426347"
+            colorPrimary: "#426369",
+            colorBorder: "#426369"
           },
           Input: {
-            activeBorderColor: "#426347",
+            activeBorderColor: "#426369",
             hoverBorderColor: "#ffffff99",
             colorTextPlaceholder: "#888888",
           },
