@@ -12,9 +12,11 @@ export const Header = styled.header`
     align-self: stretch;
     height: 160px;
     background-color: #426347;
+    box-shadow: 0px 0px 61px 12px #111111;
     margin: 0;
-    padding: 12px;
+    padding-top: 8px;
     position: relative;
+    z-index: 1;
 `;
 
 export const ContainerLogo = styled.div`

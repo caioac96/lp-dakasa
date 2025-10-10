@@ -10,12 +10,12 @@ createRoot(document.getElementById('root')!).render(
       theme={{
         token: {
           colorPrimary: "#426347",
-          colorPrimaryHover: "#ffffff99", // hover
-          colorPrimaryActive: "#ffffff99",
-          colorLink: "#ffffff",
-          colorLinkHover: "#ffffff99",
+          colorPrimaryHover: "#42634755", // hover
+          colorPrimaryActive: "#42634755",
+          colorLink: "#426347",
+          colorLinkHover: "#42634755",
           colorLinkActive: "#ffffff99",
-          colorText: "#111111",
+          colorText: "#426347",
           colorBgContainer: "#111111",
           fontFamily: "'Poppins', sans-serif",
           borderRadius: 8,

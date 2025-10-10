@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const MenuContainer = styled.div`
     height: 20%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -9,6 +10,7 @@ export const MenuContainer = styled.div`
     align-items: center;
     text-align: center;
     min-width: 598px;
+    background-color: #ffffff;
 
     * {
         font-size: 20px;
@@ -17,9 +19,8 @@ export const MenuContainer = styled.div`
 
 export const Body = styled.main`
     width: 100%;
-    min-height: 100vh;
+    min-height: 200vh;
     background-color: white;
-    padding-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,74 +28,39 @@ export const Body = styled.main`
 `;
 
 export const ContainerImageVitrine = styled.div`
-    width: 80%;
+    height: 400px;
+    width: 100%;
     display: flex;
     gap: 10px;
     position: relative;
     align-items: center;
     align-content: center;
     justify-content: center;
-    min-height: 700px;
+    overflow: hidden;
 
     .ant-image {
         position: unset !important;
     }
-    
+
     .img-div {
         position: absolute;
-        height: 700px;
-        width: auto;
-        /* border-radius: 18px; */
+        top: -80px;
+        left: 0px;
+        width: 100%;
         filter: blur(1px);
-        right: 35%;
-        top: 0px;
-        z-index: 3;
-    }
-
-    .img-div-2 {
-        position: absolute;
-        height: 700px;
-        width: auto;
-        /* border-radius: 18px; */
-        left: 8%;
-        top: 0px;
-        filter: blur(1px);
-        z-index: 2;
-    }
-
-    .img-div-3 {
-        position: absolute;
-        height: 700px;
-        width: auto;
-        /* border-radius: 18px; */
-        right: 5%;
-        top: 0px;
-        filter: blur(1px);
-        z-index: 1;
     }
 `;
 
 export const Faixa1 = styled.div`
-    position: absolute;
     height: 1px;
     width: 100%;
-    background-color: #111111;
-    top: 250px;
+    background-color: #42634755;
+    margin-bottom: 10px;
     filter: blur(3px);
-    z-index: 0;
-`;
-
-export const Faixa2 = styled.div`
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    background-color: #111111;
-    top: 550px;
-    filter: blur(3px);
-    z-index: 0;
 `;
 
 export const CardBody = styled.div`
+    display: none;
     position: absolute;
     width: 600px;
     height: 400px;
@@ -107,4 +73,12 @@ export const CardBody = styled.div`
     left: 30%;
     padding: 60px;
     font-size: 25px !important;
+`;
+
+export const ContainerInstagram = styled.div`
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin-bottom: 30px;
 `;

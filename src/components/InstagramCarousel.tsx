@@ -1,19 +1,17 @@
+import { ContainerInstagram } from "./styles";
+
 export default function InstagramCarousel() {
   const posts = [
     "DPRvROtEVqh",
     "CmpNsxduklJ",
+    "DOdp1RgDR1c",
+    "ClWps-0OT78",
     "CmhQH7rObRd",
+    "ClMenzuuxsQ"
   ];
 
   return (
-    <div
-      style={{
-        display: "flex",
-        gap: "20px",
-        overflowX: "auto",
-        scrollSnapType: "x mandatory",
-      }}
-    >
+    <ContainerInstagram>
       {posts.map((id) => (
         <iframe
           key={id}
@@ -29,6 +27,6 @@ export default function InstagramCarousel() {
           }}
         />
       ))}
-    </div>
+    </ContainerInstagram>
   );
 };

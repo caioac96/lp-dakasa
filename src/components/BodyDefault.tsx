@@ -1,26 +1,29 @@
 import { Image, Typography } from "antd";
 import InstagramCarousel from "./InstagramCarousel";
-import { Body, CardBody, ContainerImageVitrine, Faixa1, Faixa2 } from "./styles";
-import bodyImage1 from "../assets/image/pexels-olga-chursina-587683405-33052931.jpg";
-import bodyImage2 from "../assets/image/pexels-alisa-foxy-3585523-17145040.jpg";
-import bodyImage3 from "../assets/image/plate-10877.jpg";
+import { Body, CardBody, ContainerImageVitrine, Faixa1 } from "./styles";
+import bodyImage from "../assets/image/pexels-lachlan-ross-5967868.jpg";
 
 export default function BodyDefault() {
+    const handleClick = () => {
+        window.open('https://www.instagram.com/lojadakasaoficial', '_blank');
+    };
+
     return (
         <Body>
             <ContainerImageVitrine>
-                <CardBody>
+                {/* <CardBody>
                     <Typography.Title level={2}>
                         Uma loja com ampla variedade de utensílios e decorações que vão deixar sua casa mais bonita e tornar seu dia a dia mais prático!
                     </Typography.Title>
-                </CardBody>
-                <Faixa1></Faixa1>
-                <Faixa2></Faixa2>
-                <Image preview={false} className="img-div-2" src={bodyImage2}></Image>
-                <Image preview={false} className="img-div" src={bodyImage1}></Image>
-                <Image preview={false} className="img-div-3" src={bodyImage3}></Image>
+                </CardBody> */}
+                <Image preview={false} className="img-div" src={bodyImage}></Image>
             </ContainerImageVitrine>
+            <Typography.Title level={2}>
+                Acompanhe nosso <Typography.Link style={{ fontSize: "30px", fontWeight: "bold" }} onClick={handleClick}>Instagram</Typography.Link>
+            </Typography.Title>
+            <Faixa1></Faixa1>
             <InstagramCarousel />
+            <Faixa1></Faixa1>
         </Body>
     )
 }
