@@ -1,7 +1,9 @@
 import { Image, Typography } from "antd";
 import InstagramCarousel from "./InstagramCarousel";
-import { Body, CardBody, ContainerImageVitrine, Faixa1 } from "./styles";
-import bodyImage from "../assets/image/pexels-lachlan-ross-5967868.jpg";
+import { Body, ContainerImageVitrine, ContainerNews, Faixa1, TextAbout } from "./styles";
+import bodyImage1 from "../assets/image/pexels-lachlan-ross-5967868.jpg";
+import bodyImage2 from "../assets/image/pexels-hannaauramenka-8746961.jpg";
+import bodyImage3 from "../assets/image/pexels-rdne-8208337.jpg";
 
 export default function BodyDefault() {
     const handleClick = () => {
@@ -11,19 +13,28 @@ export default function BodyDefault() {
     return (
         <Body>
             <ContainerImageVitrine>
-                {/* <CardBody>
-                    <Typography.Title level={2}>
-                        Uma loja com ampla variedade de utensílios e decorações que vão deixar sua casa mais bonita e tornar seu dia a dia mais prático!
-                    </Typography.Title>
-                </CardBody> */}
-                <Image preview={false} className="img-div" src={bodyImage}></Image>
+                <Image preview={false} className="img-div1" src={bodyImage1}></Image>
             </ContainerImageVitrine>
-            <Typography.Title level={2}>
-                Acompanhe nosso <Typography.Link style={{ fontSize: "30px", fontWeight: "bold" }} onClick={handleClick}>Instagram</Typography.Link>
+            <Faixa1 />
+            <TextAbout>
+                <Typography.Text>
+                    "Uma loja com ampla <b>variedade</b> de utensílios e decorações que vão deixar sua casa mais bonita e tornar seu dia-a-dia mais <b>prático</b>!"
+                </Typography.Text>
+            </TextAbout>
+            <Faixa1 />
+            <ContainerImageVitrine>
+                <Image preview={false} className="img-div2" src={bodyImage2}></Image>
+            </ContainerImageVitrine>
+            <Typography.Title level={4}>
+                Acompanhe nosso <Typography.Link style={{ fontSize: "20px", fontWeight: "bold" }} onClick={handleClick}>Instagram</Typography.Link>
             </Typography.Title>
-            <Faixa1></Faixa1>
+            <Faixa1 />
             <InstagramCarousel />
-            <Faixa1></Faixa1>
+            <ContainerImageVitrine>
+                <Image preview={false} className="img-div3" src={bodyImage3}></Image>
+            </ContainerImageVitrine>
+            <Faixa1 />
+            <ContainerNews>teste</ContainerNews>
         </Body>
     )
 }

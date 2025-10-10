@@ -13,7 +13,7 @@ export const MenuContainer = styled.div`
     background-color: #ffffff;
 
     * {
-        font-size: 20px;
+        font-size: 16px;
     }
 `;
 
@@ -28,7 +28,8 @@ export const Body = styled.main`
 `;
 
 export const ContainerImageVitrine = styled.div`
-    height: 400px;
+    min-height: 20vh;
+    height: 20vh;
     width: 100%;
     display: flex;
     gap: 10px;
@@ -42,12 +43,37 @@ export const ContainerImageVitrine = styled.div`
         position: unset !important;
     }
 
-    .img-div {
+    .img-div1 {
         position: absolute;
+        width: 100%;
+        /* filter: blur(1px); */
         top: -80px;
         left: 0px;
+    }
+
+    .img-div2 {
         width: 100%;
-        filter: blur(1px);
+        /* filter: blur(1px); */
+        margin-top: 110px;
+    }
+
+    
+    .img-div3 {
+        width: 100%;
+        /* filter: blur(1px); */
+        margin-top: -240px;
+    }
+`;
+
+export const TextAbout = styled.div`
+    height: 40vh;
+    width: 30%;
+    min-width: 370px;
+    text-align: center;
+    align-content: center;
+
+    .ant-typography {
+        font-size: 30px;
     }
 `;
 
@@ -56,6 +82,7 @@ export const Faixa1 = styled.div`
     width: 100%;
     background-color: #42634755;
     margin-bottom: 10px;
+    margin-top: 20px;
     filter: blur(3px);
 `;
 
@@ -77,8 +104,51 @@ export const CardBody = styled.div`
 
 export const ContainerInstagram = styled.div`
     display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
     margin-bottom: 30px;
+    position: relative;
+    justify-content: center;
+    width: 90%;
+`;
+
+export const ContainerPosts = styled.div`
+    display: flex;
+    z-index: 0;
+    gap: 20px;
+`;
+
+export const ButtonDivLeft = styled.div`
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+    left: 1%;
+    box-shadow: 6px 12px 111px #111111;
+    background-color: #ffffff88;
+    border-radius: 80px;
+    top: 200px;
+`;
+
+export const ContainerNews = styled.div`
+    width: 100%;
+    height: 200px;
+    background-color: #426347;
+    margin-top: 30px;
+`;
+
+export const ButtonDivRight = styled.div`
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+    right: 1%;
+    box-shadow: 6px 12px 111px #111111;
+    border-radius: 80px;
+    background-color: #ffffff88;
+    top: 200px
 `;

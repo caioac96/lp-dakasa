@@ -19,7 +19,7 @@ export default function App() {
         <HomeContainer>
           <Header>
             <ContainerIconsHeader>
-              <Typography.Link onClick={handleClick}>
+              <Typography.Link onClick={handleClick} style={{color: "#ffffff"}}>
                 <GrInstagram size={20} />
               </Typography.Link>
             </ContainerIconsHeader>
@@ -28,12 +28,12 @@ export default function App() {
             </ContainerLogo>
             <MenuDefault />
           </Header>
+          <Router>
+            <Routes>
+              <Route path="/" element={<BodyDefault />} />
+            </Routes>
+          </Router>
         </HomeContainer>
-        <Router>
-          <Routes>
-            <Route path="/" element={<BodyDefault />} />
-          </Routes>
-        </Router>
       </Content>
     </Layout>
   );
