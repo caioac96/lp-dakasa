@@ -1,11 +1,11 @@
 import { Image, Typography } from "antd";
-import InstagramCarousel from "./InstagramCarousel";
-import { Body, ContainerImageVitrine, Faixa1, TextAbout } from "./styles";
+import InstagramCarousel from "../components/InstagramCarousel";
+import { Body, ContainerImageVitrine, Faixa1, TextAbout } from "../components/styles";
 import bodyImage1 from "../assets/image/pexels-lachlan-ross-5967868.jpg";
 import bodyImage2 from "../assets/image/pexels-hannaauramenka-8746961.jpg";
 import bodyImage3 from "../assets/image/pexels-rdne-8208337.jpg";
 
-export default function BodyDefault() {
+export default function Home() {
     const handleClick = () => {
         window.open('https://www.instagram.com/lojadakasaoficial', '_blank');
     };
@@ -18,7 +18,7 @@ export default function BodyDefault() {
             <Faixa1 />
             <TextAbout>
                 <Typography.Text>
-                    "Ampla <b>variedade</b> de utensílios e decorações que vão deixar sua casa mais bonita e tornar seu dia-a-dia mais <b>prático</b>!"
+                    "Ampla <b>variedade</b> de utensílios e decorações que vão deixar sua casa mais bonita e tornar seu dia a dia mais <b>prático</b>!"
                 </Typography.Text>
             </TextAbout>
             <Faixa1 />

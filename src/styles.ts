@@ -12,7 +12,7 @@ export const Header = styled.header`
     align-self: stretch;
     height: 160px;
     background-color: #426369;
-    box-shadow: 0px 0px 61px 12px #111111;
+    box-shadow: 0px 4px 27px 0px #42636988;
     margin: 0;
     padding-top: 8px;
     position: relative;
@@ -26,23 +26,31 @@ export const ContainerLogo = styled.div`
     }
 `;
 
+export const ContainerLogoFooter = styled.div`
+    .logo-div {
+        height: 100px;
+    }
+`;
+
 export const ContainerIconsHeader = styled.div`
     position: absolute;
+    display: flex;
+    gap: 15px;
     height: 30px;
-    width: 30px;
+    width: 80px;
     top: 20px;
-    right: 30px;
+    right: 1%;
     cursor: pointer;
 `;
 
 export const Footer = styled.div`
     width: 100%;
-    height: 400px;
+    height: 450px;
     background-color: #426369;
     display: flex;
     padding: 40px;
     justify-content: center;
-    box-shadow: 0px 0px 80px 1px #111111;
+    box-shadow: 0px 0px 23px 30px #42636988;
     z-index: 1;
 
     .div-inside-news {

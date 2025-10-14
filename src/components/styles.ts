@@ -14,10 +14,23 @@ export const MenuContainer = styled.div`
     * {
         font-size: 16px;
     }
+
+    @media (max-width: 768px) {
+        * {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        gap: 20px;
+        * {
+            font-size: 14px;
+        }
+    }
 `;
 
 export const MenuFooterContainer = styled.div`
-    height: 50px;
+    height: 35px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -27,8 +40,7 @@ export const MenuFooterContainer = styled.div`
     text-align: center;
     
     * {
-        font-size: 16px;
-        text-decoration: underline !important;
+        font-size: 14px;
     }
 `;
 
@@ -159,4 +171,61 @@ export const ButtonDivRight = styled.div`
     border-radius: 80px;
     background-color: #ffffff88;
     top: 200px
+`;
+
+export const AboutDiv = styled.div`
+    width: 40%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .body-about {
+        font-size: 16px;
+    }
+
+    @media (max-width: 480px) {
+        width: 80%;
+    }
+`;
+
+export const ContactDiv = styled.div`
+    width: 40%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .div-buttons {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+
+        * {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        width: 80%;
+    }
+`;
+
+export const MapDiv = styled.div`
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 `;
