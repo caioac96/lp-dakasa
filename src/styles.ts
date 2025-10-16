@@ -14,15 +14,16 @@ export const Header = styled.header`
     background-color: #426369;
     box-shadow: 0px 4px 27px 0px #42636988;
     margin: 0;
-    padding-top: 8px;
+    padding-top: 10px;
     position: relative;
     z-index: 1;
 `;
 
 export const ContainerLogo = styled.div`
-    height: 80%;
+    height: 110px;
     .logo-div {
         height: 100px;
+        width: 173px;
     }
 `;
 
@@ -32,15 +33,19 @@ export const ContainerLogoFooter = styled.div`
     }
 `;
 
-export const ContainerIconsHeader = styled.div`
-    position: absolute;
+export const ContainerIconsFloating = styled.div`
+    position: fixed;
     display: flex;
-    gap: 15px;
-    height: 30px;
-    width: 80px;
-    top: 20px;
-    right: 1%;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 45px;
+    bottom: 70px;
+    right: 2%;
     cursor: pointer;
+    border-radius: 30px;
+    background-color: #25D366;
+    z-index: 4;
 `;
 
 export const Footer = styled.div`
@@ -69,8 +74,8 @@ export const Faixa2 = styled.div`
     width: 50%;
     display: flex;
     background-color: #ffffff;
-    margin-bottom: 10px;
-    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-top: 50px;
     filter: blur(1px);
 `;
 

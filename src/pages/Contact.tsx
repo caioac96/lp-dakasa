@@ -1,7 +1,10 @@
 import { Button, Typography } from "antd";
-import { ContactDiv } from "../components/styles";
+import { ContactDiv, MapDiv } from "../components/styles";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { GrInstagram } from "react-icons/gr";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import MapEmbed from "../components/MapEmbed";
+import { Faixa2 } from "../styles";
 
 export default function Contact() {
     const clickInstagram = () => {
@@ -13,14 +16,22 @@ export default function Contact() {
     };
 
     return (
-        <ContactDiv>
-            <Typography.Title level={1}>Entre em contato conosco</Typography.Title>
-            <Typography.Text>Será um prazer lhe atender!</Typography.Text>
-            <br />
-            <div className="div-buttons">
-                <Button type="primary" onClick={clickWhatsApp} icon={<IoLogoWhatsapp />}>WhatsApp</Button>
-                <Button type="primary" onClick={clickInstagram} icon={<GrInstagram />}>Instagram</Button>
+        <>
+            <ContactDiv>
+                <Typography.Title level={1}>Entre em contato</Typography.Title>
+                <Typography.Text>Será um prazer lhe atender!</Typography.Text>
+                <div className="div-buttons">
+                    <Button type="primary" onClick={clickWhatsApp} icon={<IoLogoWhatsapp />}>WhatsApp</Button>
+                    <Button type="primary" onClick={clickInstagram} icon={<GrInstagram />}>Instagram</Button>
+                </div>
+            </ContactDiv>
+            <div style={{ width: "100%", justifyContent: "center", display: "flex" }}>
+                <Faixa2 style={{ backgroundColor: "#42636988" }} />
             </div>
-        </ContactDiv>
+            <MapDiv>
+                <Typography.Title level={1}>Nosso endereço <FaMapMarkerAlt size={26} /></Typography.Title>
+                <MapEmbed />
+            </MapDiv>
+        </>
     )
 }

@@ -1,6 +1,5 @@
 import { Typography } from "antd";
 import { MenuContainer } from "./styles";
-import { FaMapMarkerAlt } from "react-icons/fa";
 import { useLocation, useNavigate } from "react-router-dom";
 
 export default function MenuDefault() {
@@ -18,7 +17,6 @@ export default function MenuDefault() {
             <Typography.Link onClick={() => navigate("/")} style={linkStyle("/")}>Início</Typography.Link>
             <Typography.Link onClick={() => navigate("/about")} style={linkStyle("/about")}>Sobre</Typography.Link>
             <Typography.Link onClick={() => navigate("/contact")} style={linkStyle("/contact")}>Contato</Typography.Link>
-            <Typography.Link onClick={() => navigate("/map")} style={linkStyle("/map")}>Nosso endereço <FaMapMarkerAlt size={14} /></Typography.Link>
         </MenuContainer>
     )
 }

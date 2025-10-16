@@ -13,7 +13,7 @@ export default function Home() {
     return (
         <Body>
             <ContainerImageVitrine>
-                <Image preview={false} className="img-div1" src={bodyImage1}></Image>
+                <Image preview={false} className="img-div" src={bodyImage1}></Image>
             </ContainerImageVitrine>
             <Faixa1 />
             <TextAbout>
@@ -23,14 +23,14 @@ export default function Home() {
             </TextAbout>
             <Faixa1 />
             <ContainerImageVitrine>
-                <Image preview={false} className="img-div2" src={bodyImage2}></Image>
+                <Image preview={false} className="img-div one-i" src={bodyImage2}></Image>
             </ContainerImageVitrine>
             <Typography.Title level={3}>
-                Acompanhe nosso <Typography.Link style={{ fontSize: "24px", fontWeight: "bold", textDecoration: "underline" }} onClick={handleClick}>Instagram</Typography.Link>
+                Acompanhe nosso <Typography.Link style={{ fontWeight: "bold", textDecoration: "underline" }} onClick={handleClick}>Instagram</Typography.Link>
             </Typography.Title>
             <InstagramCarousel />
             <ContainerImageVitrine>
-                <Image preview={false} className="img-div3" src={bodyImage3}></Image>
+                <Image preview={false} className="img-div two-i" src={bodyImage3}></Image>
             </ContainerImageVitrine>
         </Body>
     )

@@ -8,6 +8,7 @@ export default function MenuFooter() {
     return (
         <MenuFooterContainer>
             <Typography.Link onClick={() => navigate('/')}>Início</Typography.Link>
+            <Typography.Link onClick={() => navigate("/about")}>Sobre</Typography.Link>
             <Typography.Link onClick={() => navigate('/contact')}>Contato</Typography.Link>
         </MenuFooterContainer>
     )

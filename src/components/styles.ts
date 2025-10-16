@@ -1,30 +1,30 @@
 import styled from "styled-components";
 
 export const MenuContainer = styled.div`
-    height: 20%;
+    height: 46px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 55px;
+    gap: 65px;
     align-items: center;
     text-align: center;
     background-color: #ffffff;
 
     * {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     @media (max-width: 768px) {
         * {
-            font-size: 14px;
+            font-size: 16px;
         }
     }
 
     @media (max-width: 480px) {
-        gap: 20px;
+        gap: 22px;
         * {
-            font-size: 14px;
+            font-size: 16px;
         }
     }
 `;
@@ -41,22 +41,33 @@ export const MenuFooterContainer = styled.div`
     
     * {
         font-size: 14px;
+        text-decoration: underline !important;
     }
 `;
 
 export const Body = styled.main`
     width: 100%;
-    min-height: 170vh;
+    min-height: 160vh;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    .ant-typography {
+        font-size: 30px;
+    }
+
+    @media (max-width: 480px) {
+        .ant-typography {
+            font-size: 18px;
+        }
+    }
 `;
 
 export const ContainerImageVitrine = styled.div`
-    min-height: 21vh;
-    height: 22vh;
+    min-height: 20vh;
+    /* height: 22vh; */
     width: 100%;
     display: flex;
     gap: 10px;
@@ -70,30 +81,35 @@ export const ContainerImageVitrine = styled.div`
         position: unset !important;
     }
 
-    .img-div1 {
+    .img-div {
         position: absolute;
         width: 100%;
         /* filter: blur(1px); */
         top: -80px;
         left: 0px;
+
+        @media (max-width: 480px) {
+            top: 0px !important;
+        }  
     }
 
-    .img-div2 {
-        width: 100%;
-        /* filter: blur(1px); */
-        margin-top: 110px;
+    .one-i {
+        top: -436px !important;
+        @media (max-width: 480px) {
+            top: -50px !important;
+        }  
     }
 
-    
-    .img-div3 {
-        width: 100%;
-        /* filter: blur(1px); */
-        margin-top: -110px;
+    .two-i {
+        top: -704px !important;
+        @media (max-width: 480px) {
+            top: -80px !important;
+        } 
     }
 `;
 
 export const TextAbout = styled.div`
-    height: 40vh;
+    height: 30vh;
     width: 30%;
     min-width: 370px;
     text-align: center;
@@ -101,6 +117,12 @@ export const TextAbout = styled.div`
 
     .ant-typography {
         font-size: 30px;
+    }
+
+    @media (max-width: 480px) {
+        .ant-typography {
+            font-size: 20px;
+        }
     }
 `;
 
@@ -141,6 +163,11 @@ export const ContainerPosts = styled.div`
     display: flex;
     z-index: 0;
     gap: 20px;
+
+    @media (max-width: 480px) {
+        border: 0.5px solid #42636955;
+        padding: 5px;
+    }
 `;
 
 export const ButtonDivLeft = styled.div`
@@ -175,7 +202,7 @@ export const ButtonDivRight = styled.div`
 
 export const AboutDiv = styled.div`
     width: 40%;
-    min-height: 80vh;
+    min-height: 130vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,18 +216,18 @@ export const AboutDiv = styled.div`
 
     @media (max-width: 480px) {
         width: 80%;
+        min-height: 180vh;
     }
 `;
 
 export const ContactDiv = styled.div`
     width: 40%;
-    min-height: 80vh;
+    min-height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
 
     .div-buttons {
         margin-top: 20px;
@@ -221,11 +248,10 @@ export const ContactDiv = styled.div`
 
 export const MapDiv = styled.div`
     width: 100%;
-    min-height: 80vh;
+    min-height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 `;
