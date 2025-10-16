@@ -39,14 +39,30 @@ export const ContainerIconsFloating = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45px;
-    width: 45px;
+    height: 90px;
+    width: 90px;
     bottom: 70px;
     right: 2%;
     cursor: pointer;
-    border-radius: 30px;
+    border-radius: 60px;
     background-color: #25D366;
     z-index: 4;
+
+    @media (max-width: 480px) {
+        height: 55px;
+        width: 55px;
+    }
+
+    .icon-wpp {
+        color: #ffffff;
+        height: 42px;
+        width: 42px;
+
+        @media (max-width: 480px) {
+            height: 25px;
+            width: 25px;
+        }
+    }
 `;
 
 export const Footer = styled.div`

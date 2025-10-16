@@ -31,7 +31,7 @@ export default function InstagramCarousel() {
   return (
     <ContainerInstagram>
       <ButtonDivLeft>
-        <BiChevronLeft size={50} onClick={handlePrev} />
+        <BiChevronLeft size={50} onClick={handlePrev} onMouseDown={(e) => e.preventDefault()}/>
       </ButtonDivLeft>
       <ContainerPosts>
         {posts.map((src, index) => {
@@ -48,6 +48,7 @@ export default function InstagramCarousel() {
               animate={{ scale, opacity }}
               transition={{ type: "spring", stiffness: 800, damping: 60 }}
               className="relative flex-shrink-0"
+              onMouseDown={(e) => e.preventDefault()}
               style={{
                 filter: blur,
                 zIndex: isActive ? 2 : 1,
@@ -63,7 +64,8 @@ export default function InstagramCarousel() {
                 style={{
                   width: "250px",
                   height: "450px",
-                  borderRadius: "20px"
+                  borderRadius: "20px",
+                  pointerEvents: isActive ? "auto" : "none"
                 }}
               />
             </motion.div>
@@ -71,7 +73,7 @@ export default function InstagramCarousel() {
         })}
       </ContainerPosts>
       <ButtonDivRight>
-        <BiChevronRight size={50} onClick={handleNext} />
+        <BiChevronRight size={50} onClick={handleNext} onMouseDown={(e) => e.preventDefault()} />
       </ButtonDivRight>
     </ContainerInstagram>
   );

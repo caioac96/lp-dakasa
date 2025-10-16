@@ -22,7 +22,7 @@ export default function App() {
       <ScrollToTop />
       <Layout >
         <ContainerIconsFloating onClick={clickWhatsApp}>
-          <IoLogoWhatsapp size={22} style={{ color: "#ffffff" }} />
+          <IoLogoWhatsapp className="icon-wpp" />
         </ContainerIconsFloating>
         <Content>
           <HomeContainer>
@@ -49,7 +49,7 @@ export default function App() {
                 <Typography.Text>Campo Largo/Paraná</Typography.Text>
                 <MenuFooter />
                 <div style={{ width: "100%", justifyContent: "center", display: "flex" }}>
-                  <Faixa2 style={{marginTop: "20px"}}/>
+                  <Faixa2 style={{ marginTop: "20px" }} />
                 </div>
                 <Signature>
                   <Typography.Text>Da Kasa © Copyright 2025</Typography.Text>

@@ -12,7 +12,10 @@ export default function About() {
             <Typography.Title level={1}>Nossa história</Typography.Title>
             <br />
             <Typography.Text className="body-about">
-                A Da Kasa nasceu em <b>1998</b>, com um propósito simples e apaixonante: transformar casas em lares cheios de <b>estilo</b>, <b>conforto</b> e <b>boas lembranças</b>. <br />Localizada estrategicamente na Rodovia BR 277, Km 121 (sentido Curitiba/Ponta Grossa), no bairro Rondinha, em Campo Largo — a loja se tornou referência regional em produtos de decoração, utilidades e presentes. <br />
+                A Da Kasa nasceu em <b>1998</b>, com um propósito simples e apaixonante: transformar casas em lares cheios de <b>estilo</b>, <b>conforto</b> e <b>boas lembranças</b>. 
+                <br />
+                <br />
+                Localizada estrategicamente na Rodovia BR 277, Km 121 (sentido Curitiba/Ponta Grossa), no bairro Rondinha, em Campo Largo — a loja se tornou referência regional em produtos de decoração, utilidades e presentes. <br />
                 <br />
                 Desde o início, a Da Kasa se destacou por unir qualidade, bom gosto e atendimento próximo, criando uma relação de amizade com cada cliente que entra pela porta. Com o passar dos anos, a loja acompanhou as tendências do mercado, renovando constantemente seu mix de produtos e trazendo novidades que inspiram ambientes e momentos especiais. <br />
                 <br />
