@@ -30,6 +30,7 @@ export const ContainerLogo = styled.div`
 export const ContainerLogoFooter = styled.div`
     .logo-div {
         height: 100px;
+        width: 173px;
     }
 `;
 
