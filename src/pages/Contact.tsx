@@ -12,7 +12,7 @@ export default function Contact() {
     };
 
     const clickWhatsApp = () => {
-        window.open("https://wa.me/5541991298850", "_blank");
+        window.open("https://api.whatsapp.com/send?phone=5541991298850", "_blank");
     };
 
     return (
