@@ -17,6 +17,10 @@ export default function App() {
     window.open("https://api.whatsapp.com/send?phone=5541991298850", "_blank");
   };
 
+  const handleClick = () => {
+    window.open('https://www.nuvyn.com.br', '_blank');
+  };
+
   return (
     <Router>
       <ScrollToTop />
@@ -52,8 +56,8 @@ export default function App() {
                   <Faixa2 style={{ marginTop: "20px" }} />
                 </div>
                 <Signature>
-                  <Typography.Text>Da Kasa © Copyright 2025</Typography.Text>
-                  <Typography.Text>desenvolvido por <b>Nuvyn</b></Typography.Text>
+                  <Typography.Text>Todos os direitos reservados © Da Kasa 2025</Typography.Text>
+                  <Typography.Text>desenvolvido por <Typography.Link style={{ fontWeight: "bold", textDecoration: "underline" }} onClick={handleClick}>Nuvyn</Typography.Link></Typography.Text>
                 </Signature>
               </div>
             </Footer>
