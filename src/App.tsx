@@ -38,7 +38,7 @@ export default function App() {
               <MenuDefault />
             </Header>
             <AdSense
-              slot="4152153876"
+              slot="3366859276"
               style={{ margin: "20px 0", textAlign: "center" }}
             />
             <Routes>
@@ -47,7 +47,7 @@ export default function App() {
               <Route path="/contact" element={<Contact />} />
             </Routes>
             <AdSense
-              slot="3155106282"
+              slot="3568688181"
               style={{ margin: "40px 0", textAlign: "center" }}
             />
             <Footer>
