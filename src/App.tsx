@@ -9,7 +9,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/ScrollToTop";
-import AdSense from "./components/AdSense";
+// import AdSense from "./components/AdSense";
 
 const { Content } = Layout;
 
@@ -37,19 +37,19 @@ export default function App() {
               </ContainerLogo>
               <MenuDefault />
             </Header>
-            <AdSense
+            {/* <AdSense
               slot="3366859276"
               style={{ margin: "20px 0", textAlign: "center" }}
-            />
+            /> */}
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
-            <AdSense
+            {/* <AdSense
               slot="3568688181"
               style={{ margin: "40px 0", textAlign: "center" }}
-            />
+            /> */}
             <Footer>
               <div className="div-inside-news">
                 <ContainerLogoFooter>
